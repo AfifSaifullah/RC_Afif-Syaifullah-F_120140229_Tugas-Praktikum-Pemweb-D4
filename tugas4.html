@@ -1,0 +1,119 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minggu 4</title>
+
+    <link rel="stylesheet" href="tugas4.css">
+</head>
+
+<body>
+    <header class="main-header disFlex">
+        <img class="main-header__img" src="https://images.unsplash.com/photo-1518270444395-285fb1a25728?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="My photograph"/>
+        <div class="main-header__title">
+            <h1>Hai, Saya Afif Syaifullah Fattah.</h1>
+            <p>Seorang mahasiswa IF Itera</p>
+        </div>
+    </header>
+    
+    <aside class="main-aside">
+        <nav class="main-nav">
+            <ul class="main-nav__list">
+                <li class="main-nav__item"><a href="#about">Tentang Saya</a></li>
+                <li class="main-nav__item"><a href="#work">Pengalaman Kerja</a></li>
+                <li class="main-nav__item"><a href="#contact">Hubungi Saya</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <button id="theme-button" type="button" onclick="changeTheme()">Dark Theme</button>
+    
+    <main>
+        <section class="main-sect" id="about">
+            <h2 class="main-sect__head"># Tentang Saya</h2>
+
+            <div class="main-sect__content disFlex">
+                <p class="main-sect__content__p firstBig">
+                    Nama saya Afif Syaifullah Fattah, saya adalah mahasiswa IF dari Itera dengan NIM 12014022. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, ipsum cum doloribus repellat dolorem, dolor ut saepe omnis veritatis earum quod ab. Possimus iste repudiandae optio ducimus! Quam, aliquam fugit?
+                </p>
+                <figure class="main-sect__fig">
+                    <iframe src="https://www.youtube.com/embed/yMUZwsLs4Es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <figcaption>Video saya</figcaption>
+                </figure>
+            </div>
+        </section>
+    
+        <section class="main-sect" id="work">
+            <h2 class="main-sect__head"># Pengalaman Kerja</h2>
+
+            <table class="main-sect__table">
+                <thead>
+                    <tr>
+                        <th class="main-sect__thead" rowspan="2">No</th>
+                        <th class="main-sect__thead" rowspan="2">Posisi</th>
+                        <th class="main-sect__thead" rowspan="2">Perusahaan</th>
+                        <th class="main-sect__thead" colspan="2">Waktu</th>
+                    </tr>
+                    <tr>
+                        <th>Mulai</th>
+                        <th>Selesai</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="main-sect__td">1</td>
+                        <td class="main-sect__td">Pelatih materi KSN Bidang Informatika di SMA</td>
+                        <td class="main-sect__td">-</td>
+                        <td class="main-sect__td">2020</td>
+                        <td class="main-sect__td">2021</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    
+        <section class="main-sect" id="contact">
+            <h2 class="main-sect__head"># Hubungi Saya</h2>
+
+            <div class="main-sect__form">
+                <form action="#" method="get">
+                    <label for="nama">Nama:</label>
+                    <div class="main-sect__form__input">
+                        <input type="text" name="nama" id="nama">
+                    </div>
+    
+                    <p>Sudah nonton video saya?</p>
+                    <div class="main-sect__form__input disFlex">
+                        <input type="radio" name="sudah" id="sudah">
+                        <label for="sudah">Sudah</label>
+                        <br>
+                        <input type="radio" name="belum" id="belum">
+                        <label for="belum">Belum</label>
+                    </div>
+                    <br>
+    
+                    <p>Apa coba?</p>
+                    <div class="main-sect__form__input disFlex">
+                        <input type="checkbox" name="ini" id="ini">
+                        <label for="ini">ini</label><br>
+                        <input type="checkbox" name="itu" id="itu">
+                        <label for="itu">itu</label><br>
+                        <input type="checkbox" name="anu" id="anu">
+                        <label for="anu">anu</label>
+                    </div>
+    
+                    <div class="main-sect__form__input">
+                        <input type="submit" value="KIRIM">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>End</p>
+    </footer>
+
+    <script src="tugas4.js"></script>
+</body>
+</html>
